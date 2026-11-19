@@ -1,0 +1,22 @@
+{
+  "title": "Інтернет для новачків: безпечний старт",
+  "language": "uk",
+  "pass_score": 0.8,
+  "modules": [
+    "01-what-is-internet",
+    "02-passwords",
+    "03-two-factor",
+    "04-scams",
+    "05-messaging",
+    "06-browsing",
+    "07-privacy",
+    "08-payments",
+    "09-wifi-device",
+    "10-strangers",
+    "11-incident"
+  ],
+  "exam": {
+    "questions": 15,
+    "pass_score": 0.8
+  }
+}

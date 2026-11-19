@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Пам'ятка: 10 правил безпеки в інтернеті</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .sheet{max-width:860px;margin:0 auto;padding:24px 16px 56px}
+  .sheet h1{margin:0 0 4px;font-size:clamp(1.6rem,4.5vw,2.3rem)}
+  .sheet .sub{color:var(--muted);margin:0 0 20px}
+  .rules{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:r}
+  .rules li{counter-increment:r;display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);break-inside:avoid}
+  .rules li::before{content:counter(r);flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--accent);color:var(--accent-fg);font-weight:800}
+  .rules b{display:block}
+  .rules span{color:var(--muted);font-size:.95rem}
+  .box{margin-top:20px;padding:16px 18px;border-radius:14px;background:var(--bad-soft);border:1px solid var(--bad)}
+  .box h2{margin:0 0 6px;font-size:1.1rem}
+  .box ol{margin:0;padding-left:1.3em}
+  .top{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+  .fill{margin-top:20px;border:2px dashed var(--line);border-radius:14px;padding:14px 18px}
+  .fill p{margin:10px 0;border-bottom:1px solid var(--line);padding-bottom:4px;color:var(--muted)}
+  @media print{body{font-size:12px;background:#fff;color:#000}.top{display:none}.rules li,.box{box-shadow:none}.rules{gap:6px}.sheet{padding:0}.rules span{color:#333}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top"><a class="btn" href="index.html">← До курсу</a><button class="btn primary" onclick="window.print()">Надрукувати</button></div>
+  <h1>10 правил безпеки в інтернеті</h1>
+  <p class="sub">Тримайте цю сторінку поряд із комп'ютером. Роздрукуйте й повісьте на видному місці.</p>
+  <ol class="rules">
+    <li><div><b>Зупинись і подумай</b><span>Терміновість, страх чи обіцянка легких грошей — ознаки обману. Зробіть паузу.</span></div></li>
+    <li><div><b>Нікому не називай коди та паролі</b><span>Справжній банк чи служба підтримки ніколи не просить код із SMS чи пароль.</span></div></li>
+    <li><div><b>Довгий унікальний пароль</b><span>Фраза з 4+ слів. Один акаунт — один пароль. Особливо для пошти.</span></div></li>
+    <li><div><b>Увімкни двофакторний захист</b><span>На пошті, в банку, у соцмережах. Збережіть резервні коди окремо від телефона.</span></div></li>
+    <li><div><b>Перевіряй адресу й відправника</b><span>Дивіться на повну адресу, посилання з листів не відкривайте: заходьте через закладку.</span></div></li>
+    <li><div><b>Завантажуй лише з офіційних джерел</b><span>Жодних «зламаних» програм, незнайомих вкладень і файлів .exe з пошти.</span></div></li>
+    <li><div><b>Оновлюй пристрої</b><span>Автоматичні оновлення, екранне блокування, антивірус, резервні копії за правилом 3-2-1.</span></div></li>
+    <li><div><b>Менше розповідай про себе</b><span>Не публікуй документи, картки, адресу, розпорядок, відпустку наперед. Закрий профіль.</span></div></li>
+    <li><div><b>Платіть безпечно</b><span>Окрема картка для інтернету, сповіщення про кожну операцію, CVV і код з SMS ніколи й нікому.</span></div></li>
+    <li><div><b>Помилився? Дій швидко й розкажи</b><span>Блокуй картку, змінюй паролі, збережи докази. Соромитися нічого: обманути можуть кожного.</span></div></li>
+  </ol>
+  <div class="box">
+    <h2>Якщо вас обманули: перші дії</h2>
+    <ol>
+      <li>Припиніть розмову, нічого не вводьте й не натискайте.</li>
+      <li>Зателефонуйте в банк за номером на картці й заблокуйте її.</li>
+      <li>З іншого пристрою змініть паролі, увімкніть 2FA.</li>
+      <li>Збережіть докази (скриншоти, реквізити) й повідомте поліцію.</li>
+      <li>Попередьте близьких іншим каналом.</li>
+    </ol>
+  </div>
+  <div class="fill">
+    <strong>Мої важливі номери (запишіть)</strong>
+    <p>Банк:</p><p>Мобільний оператор:</p><p>Поліція / служба допомоги:</p><p>Людина, якій я довіряю:</p>
+  </div>
+</div>
+</body>
+</html>

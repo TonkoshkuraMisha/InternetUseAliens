@@ -1,0 +1,12 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv run internetusealiens validate
+      - run: uv run python -m unittest discover tests
+      - run: uv run internetusealiens build
+      - run: node --check site/app.js
